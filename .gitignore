@@ -52,6 +52,7 @@
 
 # Portable Document Format
 *.pdf
+*.docx
 
 # X BitMap
 *.xbm
