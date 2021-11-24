@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient" representedClassName=".IngredientMO" syncable="YES">
+        <attribute name="ingredient_descr" optional="YES" attributeType="String"/>
+        <attribute name="ingredient_nom" optional="YES" attributeType="String"/>
+        <relationship name="ses_recettes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recette" inverseName="ses_ingredients" inverseEntity="Recette"/>
+    </entity>
+    <entity name="Pays" representedClassName=".PaysMO" syncable="YES">
+        <attribute name="pays_loc_lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pays_loc_long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pays_nom" optional="YES" attributeType="String"/>
+        <relationship name="ses_recettes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recette" inverseName="son_pays_origine" inverseEntity="Recette"/>
+    </entity>
+    <entity name="Recette" representedClassName=".RecetteMO" syncable="YES">
+        <attribute name="recette_descriptions" optional="YES" attributeType="String"/>
+        <attribute name="recette_nom" optional="YES" attributeType="String"/>
+        <relationship name="ses_ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="ses_recettes" inverseEntity="Ingredient"/>
+        <relationship name="son_pays_origine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pays" inverseName="ses_recettes" inverseEntity="Pays"/>
+    </entity>
+    <elements>
+        <element name="Recette" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Ingredient" positionX="-54" positionY="-9" width="128" height="74"/>
+        <element name="Pays" positionX="-45" positionY="36" width="128" height="89"/>
+    </elements>
+</model>
