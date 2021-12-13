@@ -1,0 +1,19 @@
+@startuml
+
+class Personne{
+    - String nom
+    - String prenom
+    - [Emprunts] emprunts
+}
+
+class Emprunt{
+    -String date
+    -String titreLivre
+    -Personne personne
+
+    + void supprimerEmprunt()
+}
+
+Personne "1"<--  Emprunt
+
+@enduml
