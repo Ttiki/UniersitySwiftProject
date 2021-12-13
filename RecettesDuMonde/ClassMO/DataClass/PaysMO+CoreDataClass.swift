@@ -46,4 +46,12 @@ public class PaysMO: NSManagedObject {
         }
     }
 }
+extension PaysMO:MKAnnotation{
+    public var coordinate: CLLocationCoordinate2D{
+        return CLLocationCoordinate2DMake(pays_loc_lat, pays_loc_long)
+    }
+    public var title:String?{
+        return pays_nom
+    }
+}
 

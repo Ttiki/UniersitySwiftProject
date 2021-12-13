@@ -23,9 +23,13 @@ class RecettesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
 
     @IBAction func tapBtnVoirMap(_ sender: Any) {
     }
     @IBAction func tapBtnRecette(_ sender: Any) {
     }
+    
+    
 }

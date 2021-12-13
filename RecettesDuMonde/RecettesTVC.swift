@@ -38,18 +38,26 @@ class RecettesTVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return lesRecettes.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath)-> CGFloat{
+        return 70
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "recetteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recetteCell", for: indexPath) as! RecettesTableViewCell
 
         let laRecette = lesRecettes[indexPath.row]
+        
+        cell.titreRecetteLab?.text=laRecette.recette_nom
+        cell.paysOrigineLab?.text = laRecette.recette_pays_origine
+        //cell.recetteImgView?.image = UIImage(names: laRecette.recette_nom)
         
 
         return cell
     }
+  
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		684102BC2767454000A4E6F8 /* RecetteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684102BB2767454000A4E6F8 /* RecetteInfoViewController.swift */; };
 		F51B7BC2274E1C5C007F0261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC1274E1C5C007F0261 /* AppDelegate.swift */; };
 		F51B7BC4274E1C5C007F0261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC3274E1C5C007F0261 /* SceneDelegate.swift */; };
-		F51B7BC6274E1C5D007F0261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC5274E1C5D007F0261 /* ViewController.swift */; };
+		F51B7BC6274E1C5D007F0261 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC5274E1C5D007F0261 /* PlanViewController.swift */; };
 		F51B7BC9274E1C5D007F0261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51B7BC7274E1C5D007F0261 /* Main.storyboard */; };
 		F51B7BCC274E1C5D007F0261 /* RecettesDuMonde.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BCA274E1C5D007F0261 /* RecettesDuMonde.xcdatamodeld */; };
 		F51B7BCE274E1D1B007F0261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51B7BCD274E1D1B007F0261 /* Assets.xcassets */; };
@@ -28,10 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		684102BB2767454000A4E6F8 /* RecetteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetteInfoViewController.swift; sourceTree = "<group>"; };
 		F51B7BBE274E1C5C007F0261 /* RecettesDuMonde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecettesDuMonde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51B7BC1274E1C5C007F0261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51B7BC3274E1C5C007F0261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F51B7BC5274E1C5D007F0261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F51B7BC5274E1C5D007F0261 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		F51B7BC8274E1C5D007F0261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51B7BCB274E1C5D007F0261 /* RecettesDuMonde.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecettesDuMonde.xcdatamodel; sourceTree = "<group>"; };
 		F51B7BCD274E1D1B007F0261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 				F568BBF7274E239E00BE7B80 /* ClassMO */,
 				F51B7BC1274E1C5C007F0261 /* AppDelegate.swift */,
 				F51B7BC3274E1C5C007F0261 /* SceneDelegate.swift */,
-				F51B7BC5274E1C5D007F0261 /* ViewController.swift */,
+				F51B7BC5274E1C5D007F0261 /* PlanViewController.swift */,
 				F51B7BC7274E1C5D007F0261 /* Main.storyboard */,
 				F568BC14274E26C100BE7B80 /* RecettesTVC.swift */,
 				F568BC16274E26EE00BE7B80 /* RecettesTableViewCell.swift */,
@@ -95,6 +97,7 @@
 				F51B7BCF274E1D1C007F0261 /* LaunchScreen.storyboard */,
 				F51B7BD2274E1D1D007F0261 /* Info.plist */,
 				F51B7BCA274E1C5D007F0261 /* RecettesDuMonde.xcdatamodeld */,
+				684102BB2767454000A4E6F8 /* RecetteInfoViewController.swift */,
 			);
 			path = RecettesDuMonde;
 			sourceTree = "<group>";
@@ -213,9 +216,10 @@
 				F568BC0F274E256700BE7B80 /* IngredientMO+CoreDataProperties.swift in Sources */,
 				F568BC15274E26C100BE7B80 /* RecettesTVC.swift in Sources */,
 				F568BC0C274E256700BE7B80 /* RecetteMO+CoreDataClass.swift in Sources */,
-				F51B7BC6274E1C5D007F0261 /* ViewController.swift in Sources */,
+				F51B7BC6274E1C5D007F0261 /* PlanViewController.swift in Sources */,
 				F51B7BC2274E1C5C007F0261 /* AppDelegate.swift in Sources */,
 				F568BC11274E256700BE7B80 /* PaysMO+CoreDataProperties.swift in Sources */,
+				684102BC2767454000A4E6F8 /* RecetteInfoViewController.swift in Sources */,
 				F51B7BC4274E1C5C007F0261 /* SceneDelegate.swift in Sources */,
 				F568BC10274E256700BE7B80 /* PaysMO+CoreDataClass.swift in Sources */,
 				F568BC0D274E256700BE7B80 /* RecetteMO+CoreDataProperties.swift in Sources */,
