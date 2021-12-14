@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         locMan.requestWhenInUseAuthorization()
-        PaysMO.peuplerPays()
+        
+        /*PaysMO.peuplerPays()
         RecetteMO.peuplerRecettes()
-        IngredientMO.peuplerIngredients()
+        IngredientMO.peuplerIngredients()*/
         return true
     }
 

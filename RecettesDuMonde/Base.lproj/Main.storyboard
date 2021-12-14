@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="RHd-5y-bS2" customClass="PlanViewController" customModule="RecettesDuMonde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wo5-lu-cDg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cET-ny-63V">
@@ -45,14 +45,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="RHd-5y-bS2" kind="relationship" relationship="viewControllers" id="YSH-EM-PsL"/>
-                        <segue destination="7e5-y5-m58" kind="relationship" relationship="viewControllers" id="NrM-Kr-N2t"/>
+                        <segue destination="mE3-OY-zbe" kind="relationship" relationship="viewControllers" id="NrM-Kr-N2t"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YpJ-Ag-Mh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-272" y="103"/>
         </scene>
-        <!--Liste des recettes-->
+        <!--RecettesTVC-->
         <scene sceneID="A8y-sB-TQb">
             <objects>
                 <tableViewController id="7e5-y5-m58" customClass="RecettesTVC" customModule="RecettesDuMonde" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,7 +93,6 @@
                                             <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system"/>
                                             <connections>
                                                 <action selector="tapBtnVoirMap:" destination="ZjI-dI-0DY" eventType="touchUpInside" id="qvV-xi-a1y"/>
-                                                <segue destination="RHd-5y-bS2" kind="show" id="eig-Wq-HVB"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -102,7 +101,7 @@
                                     <outlet property="paysOrigineLab" destination="y28-Za-bLO" id="YeT-0U-FlC"/>
                                     <outlet property="recetteImgView" destination="CLJ-0l-jaX" id="J4V-sa-Kx8"/>
                                     <outlet property="titreRecetteLab" destination="fY4-Gv-gaR" id="RO3-mC-9rq"/>
-                                    <segue destination="dPn-ag-0m1" kind="show" identifier="afficherInfos" id="xFv-cl-hVV"/>
+                                    <segue destination="dPn-ag-0m1" kind="show" id="0oe-I5-Sh9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -111,19 +110,19 @@
                             <outlet property="delegate" destination="7e5-y5-m58" id="71v-RP-Y22"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Liste des recettes" id="Bu4-2M-fAZ"/>
+                    <navigationItem key="navigationItem" id="v4Z-Wp-veo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqW-yD-hUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613.04347826086962" y="456.69642857142856"/>
+            <point key="canvasLocation" x="1523.1884057971015" y="456.69642857142856"/>
         </scene>
         <!--Recette Info View Controller-->
         <scene sceneID="toh-JW-8sj">
             <objects>
                 <viewController id="dPn-ag-0m1" customClass="RecetteInfoViewController" customModule="RecettesDuMonde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CpO-wR-ICM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOM_RECETTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8O-no-fSl">
@@ -177,9 +176,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system"/>
-                                <connections>
-                                    <segue destination="RHd-5y-bS2" kind="show" id="Ge8-vU-7KD"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QDz-eV-G4u"/>
@@ -196,12 +192,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WL-xQ-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1405.7971014492755" y="456.69642857142856"/>
+            <point key="canvasLocation" x="2252.1739130434785" y="456.69642857142856"/>
+        </scene>
+        <!--Liste des recettes-->
+        <scene sceneID="Bhx-No-4Yc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mE3-OY-zbe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Liste des recettes" id="Bu4-2M-fAZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7gd-Bc-roU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7e5-y5-m58" kind="relationship" relationship="rootViewController" id="ABt-yn-7bR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2l3-sR-QWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.04347826086962" y="456.69642857142856"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="eig-Wq-HVB"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="location.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">

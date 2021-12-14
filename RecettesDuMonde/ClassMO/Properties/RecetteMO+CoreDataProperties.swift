@@ -18,7 +18,7 @@ extension RecetteMO {
 
     @NSManaged public var recette_nom: String?
     @NSManaged public var recette_descriptions: String?
-    @NSManaged public var recette_pays_origine: String?
+    
     @NSManaged public var ses_ingredients: NSSet?
     @NSManaged public var son_pays_origine: PaysMO?
 

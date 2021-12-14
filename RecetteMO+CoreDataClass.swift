@@ -2,14 +2,13 @@
 //  RecetteMO+CoreDataClass.swift
 //  RecettesDuMonde
 //
-//  Created by Clement Combier on 24/11/2021.
+//  Created by L3NEC2021-7 on 14/12/2021.
 //
 //
 
 import Foundation
 import CoreData
 import UIKit
-import MapKit
 
 
 public class RecetteMO: NSManagedObject {

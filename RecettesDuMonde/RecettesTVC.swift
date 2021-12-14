@@ -50,13 +50,25 @@ class RecettesTVC: UITableViewController {
         let laRecette = lesRecettes[indexPath.row]
         
         cell.titreRecetteLab?.text=laRecette.recette_nom
-        cell.paysOrigineLab?.text = laRecette.recette_pays_origine
-        //cell.recetteImgView?.image = UIImage(names: laRecette.recette_nom)
+        cell.paysOrigineLab?.text = laRecette.son_pays_origine?.pays_nom
+        cell.recetteImgView?.image = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))
         
 
         return cell
     }
-  
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "RecetteInfoViewController") as! RecetteInfoViewController
+        
+        let laRecette = lesRecettes[indexPath.row]
+        
+        vc.recetteImgView.image = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))
+        vc.nomRecette_titreLab.text = laRecette.recette_nom
+    
+        
+        performSegue(withIdentifier: "afficherInfos", sender: indexPath.row)
+    }
+
     
     /*
     // Override to support conditional editing of the table view.

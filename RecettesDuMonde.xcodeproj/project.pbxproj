@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		684102BC2767454000A4E6F8 /* RecetteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684102BB2767454000A4E6F8 /* RecetteInfoViewController.swift */; };
+		684DE54D27688558007474FC /* RecetteMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DE54B27688558007474FC /* RecetteMO+CoreDataClass.swift */; };
 		F51B7BC2274E1C5C007F0261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC1274E1C5C007F0261 /* AppDelegate.swift */; };
 		F51B7BC4274E1C5C007F0261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC3274E1C5C007F0261 /* SceneDelegate.swift */; };
 		F51B7BC6274E1C5D007F0261 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B7BC5274E1C5D007F0261 /* PlanViewController.swift */; };
@@ -17,7 +18,6 @@
 		F51B7BD1274E1D1C007F0261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51B7BCF274E1D1C007F0261 /* LaunchScreen.storyboard */; };
 		F568BBE8274E207300BE7B80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F568BBE7274E207200BE7B80 /* CoreLocation.framework */; };
 		F568BBEA274E207900BE7B80 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F568BBE9274E207900BE7B80 /* MapKit.framework */; };
-		F568BC0C274E256700BE7B80 /* RecetteMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568BC06274E256700BE7B80 /* RecetteMO+CoreDataClass.swift */; };
 		F568BC0D274E256700BE7B80 /* RecetteMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568BC07274E256700BE7B80 /* RecetteMO+CoreDataProperties.swift */; };
 		F568BC0E274E256700BE7B80 /* IngredientMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568BC08274E256700BE7B80 /* IngredientMO+CoreDataClass.swift */; };
 		F568BC0F274E256700BE7B80 /* IngredientMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568BC09274E256700BE7B80 /* IngredientMO+CoreDataProperties.swift */; };
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		684102BB2767454000A4E6F8 /* RecetteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetteInfoViewController.swift; sourceTree = "<group>"; };
+		684DE54B27688558007474FC /* RecetteMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RecetteMO+CoreDataClass.swift"; path = "../../../RecetteMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F51B7BBE274E1C5C007F0261 /* RecettesDuMonde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecettesDuMonde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51B7BC1274E1C5C007F0261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51B7BC3274E1C5C007F0261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		F51B7BD2274E1D1D007F0261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F568BBE7274E207200BE7B80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F568BBE9274E207900BE7B80 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		F568BC06274E256700BE7B80 /* RecetteMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecetteMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F568BC07274E256700BE7B80 /* RecetteMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecetteMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F568BC08274E256700BE7B80 /* IngredientMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IngredientMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F568BC09274E256700BE7B80 /* IngredientMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IngredientMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		F568BC12274E256F00BE7B80 /* DataClass */ = {
 			isa = PBXGroup;
 			children = (
-				F568BC06274E256700BE7B80 /* RecetteMO+CoreDataClass.swift */,
+				684DE54B27688558007474FC /* RecetteMO+CoreDataClass.swift */,
 				F568BC08274E256700BE7B80 /* IngredientMO+CoreDataClass.swift */,
 				F568BC0A274E256700BE7B80 /* PaysMO+CoreDataClass.swift */,
 			);
@@ -215,11 +215,11 @@
 				F568BC17274E26EE00BE7B80 /* RecettesTableViewCell.swift in Sources */,
 				F568BC0F274E256700BE7B80 /* IngredientMO+CoreDataProperties.swift in Sources */,
 				F568BC15274E26C100BE7B80 /* RecettesTVC.swift in Sources */,
-				F568BC0C274E256700BE7B80 /* RecetteMO+CoreDataClass.swift in Sources */,
 				F51B7BC6274E1C5D007F0261 /* PlanViewController.swift in Sources */,
 				F51B7BC2274E1C5C007F0261 /* AppDelegate.swift in Sources */,
 				F568BC11274E256700BE7B80 /* PaysMO+CoreDataProperties.swift in Sources */,
 				684102BC2767454000A4E6F8 /* RecetteInfoViewController.swift in Sources */,
+				684DE54D27688558007474FC /* RecetteMO+CoreDataClass.swift in Sources */,
 				F51B7BC4274E1C5C007F0261 /* SceneDelegate.swift in Sources */,
 				F568BC10274E256700BE7B80 /* PaysMO+CoreDataClass.swift in Sources */,
 				F568BC0D274E256700BE7B80 /* RecetteMO+CoreDataProperties.swift in Sources */,
