@@ -58,15 +58,17 @@ class RecettesTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
         let vc = storyboard?.instantiateViewController(identifier: "RecetteInfoViewController") as! RecetteInfoViewController
         
         let laRecette = lesRecettes[indexPath.row]
         
-        vc.recetteImgView.image = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))
-        vc.nomRecette_titreLab.text = laRecette.recette_nom
+        
+        vc.imgView = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))!
+        vc.recette = laRecette
     
         
-        performSegue(withIdentifier: "afficherInfos", sender: indexPath.row)
+        performSegue(withIdentifier: "afficherInfos", sender: cell)
     }
 
     

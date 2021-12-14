@@ -16,9 +16,17 @@ class RecetteInfoViewController: UIViewController {
     @IBOutlet weak var ingredientsRecette_lab: UILabel!
     
     var tabIngredients : [IngredientMO] = []
+    
+    var imgView = UIImage()
+    var recette : RecetteMO?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("Recette sélétionnée : " + recette!.recette_nom!)
+        
+        recetteImgView.image = imgView
+        nomRecette_titreLab.text = recette!.recette_nom!
         // Do any additional setup after loading the view.
     }
     

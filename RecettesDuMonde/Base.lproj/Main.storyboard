@@ -101,7 +101,7 @@
                                     <outlet property="paysOrigineLab" destination="y28-Za-bLO" id="YeT-0U-FlC"/>
                                     <outlet property="recetteImgView" destination="CLJ-0l-jaX" id="J4V-sa-Kx8"/>
                                     <outlet property="titreRecetteLab" destination="fY4-Gv-gaR" id="RO3-mC-9rq"/>
-                                    <segue destination="dPn-ag-0m1" kind="show" id="0oe-I5-Sh9"/>
+                                    <segue destination="dPn-ag-0m1" kind="show" identifier="afficherInfos" id="0oe-I5-Sh9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -120,7 +120,7 @@
         <!--Recette Info View Controller-->
         <scene sceneID="toh-JW-8sj">
             <objects>
-                <viewController id="dPn-ag-0m1" customClass="RecetteInfoViewController" customModule="RecettesDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RecetteInfoViewController" storyboardIdentifier="RecetteInfoViewController" id="dPn-ag-0m1" customClass="RecetteInfoViewController" customModule="RecettesDuMonde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CpO-wR-ICM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
