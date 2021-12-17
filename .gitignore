@@ -188,4 +188,7 @@ iOSInjectionProject/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+*.nwd
+*.bak
+
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,visualstudiocode,images
