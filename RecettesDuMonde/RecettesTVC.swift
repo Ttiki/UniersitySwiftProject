@@ -65,8 +65,8 @@ class RecettesTVC: UITableViewController {
         laRecette = lesRecettes[indexPath.row]
         print("La recette \(laRecette)")
         
-        vc.imgView = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))!
-        vc.recette = laRecette
+        vc.imgView = UIImage(named:laRecette!.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))!
+        vc.recette = laRecette!
     
         print("Performing segue to 'afficherInfosVC'")
         performSegue(withIdentifier: "afficherInfosVC", sender: cell)
@@ -75,7 +75,7 @@ class RecettesTVC: UITableViewController {
     override func prepare(for segue:UIStoryboardSegue, sender: Any?){
         if(segue.identifier=="afficherInfosVC"),
         let destinationVC = segue.destination as? RecetteInfoViewController{
-            destinationVC.recette = laRecette
+            destinationVC.recette = laRecette!
         }
     }
 
