@@ -12,6 +12,7 @@ class RecettesTVC: UITableViewController {
     var lesPays : [PaysMO] = []
     var lesIngredients : [IngredientMO] = []
     var lesRecettes : [RecetteMO] = []
+    var laRecette: RecetteMO?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,7 @@ class RecettesTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recetteCell", for: indexPath) as! RecettesTableViewCell
 
-        let laRecette = lesRecettes[indexPath.row]
+        var laRecette = lesRecettes[indexPath.row]
         
         cell.titreRecetteLab?.text=laRecette.recette_nom
         cell.paysOrigineLab?.text = laRecette.son_pays_origine?.pays_nom
@@ -61,14 +62,21 @@ class RecettesTVC: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         let vc = storyboard?.instantiateViewController(identifier: "RecetteInfoViewController") as! RecetteInfoViewController
         
-        let laRecette = lesRecettes[indexPath.row]
-        
+        laRecette = lesRecettes[indexPath.row]
+        print("La recette \(laRecette)")
         
         vc.imgView = UIImage(named:laRecette.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))!
         vc.recette = laRecette
     
-        
-        performSegue(withIdentifier: "afficherInfos", sender: cell)
+        print("Performing segue to 'afficherInfosVC'")
+        performSegue(withIdentifier: "afficherInfosVC", sender: cell)
+    }
+    
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        if(segue.identifier=="afficherInfosVC"),
+        let destinationVC = segue.destination as? RecetteInfoViewController{
+            destinationVC.recette = laRecette
+        }
     }
 
     

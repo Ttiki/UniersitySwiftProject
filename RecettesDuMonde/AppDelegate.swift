@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locMan.requestWhenInUseAuthorization()
         
         /*PaysMO.peuplerPays()
-        RecetteMO.peuplerRecettes()
+        *RecetteMO.peuplerRecettes()
         IngredientMO.peuplerIngredients()*/
         return true
     }
