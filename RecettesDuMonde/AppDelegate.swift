@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*PaysMO.peuplerPays()
         *RecetteMO.peuplerRecettes()
         IngredientMO.peuplerIngredients()*/
+        
         return true
     }
 

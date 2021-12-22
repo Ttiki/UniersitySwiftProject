@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RecetteInfoViewController: UIViewController {
 
@@ -30,11 +31,23 @@ class RecetteInfoViewController: UIViewController {
         nomRecette_titreLab.text = laRecette!.recette_nom!
         paysOrigine_soustitreLab.text = laRecette!.son_pays_origine?.pays_nom!
         descriptionRecette_lab.text = laRecette!.recette_descriptions!
+        
         //tabIngredients = laRecette!.ses_ingredients
+        
         // Do any additional setup after loading the view.
     }
     
-
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        let destinationVC = segue.destination as! PlanViewController
+       
+        destinationVC.setLatitudeToShow(laRecette!.son_pays_origine!.pays_loc_lat)
+        destinationVC.setLongitudeToShow(laRecette!.son_pays_origine!.pays_loc_long)
+        
+        /*destinationVC.latitudeToShow = laRecette!.son_pays_origine!.pays_loc_lat
+        destinationVC.latitudeToShow = laRecette!.son_pays_origine!.pays_loc_long*/
+        destinationVC.spanZoomFloat = 3.5
+        
+    }
     /*
     // MARK: - Navigation
 
