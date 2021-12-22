@@ -48,7 +48,7 @@ class RecettesTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recetteCell", for: indexPath) as! RecettesTableViewCell
 
-        var laRecette = lesRecettes[indexPath.row]
+        let laRecette = lesRecettes[indexPath.row]
         
         cell.titreRecetteLab?.text=laRecette.recette_nom
         cell.paysOrigineLab?.text = laRecette.son_pays_origine?.pays_nom
@@ -58,6 +58,16 @@ class RecettesTVC: UITableViewController {
         return cell
     }
     
+    
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        let destinationVC = segue.destination as! RecetteInfoViewController
+        let selectedRow = tableView.indexPathForSelectedRow!.row
+        destinationVC.laRecette = lesRecettes[selectedRow]
+        
+    }
+
+    
+    /*
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         let vc = storyboard?.instantiateViewController(identifier: "RecetteInfoViewController") as! RecetteInfoViewController
@@ -70,15 +80,10 @@ class RecettesTVC: UITableViewController {
     
         print("Performing segue to 'afficherInfosVC'")
         performSegue(withIdentifier: "afficherInfosVC", sender: cell)
+        
+        self.performSegue(withIdentifier: "afficherInfosVC", sender: self)
     }
-    
-    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-        if(segue.identifier=="afficherInfosVC"),
-        let destinationVC = segue.destination as? RecetteInfoViewController{
-            destinationVC.recette = laRecette!
-        }
-    }
-
+    */
     
     /*
     // Override to support conditional editing of the table view.

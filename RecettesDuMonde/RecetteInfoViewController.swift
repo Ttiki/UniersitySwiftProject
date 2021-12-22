@@ -18,15 +18,19 @@ class RecetteInfoViewController: UIViewController {
     var tabIngredients : [IngredientMO] = []
     
     var imgView = UIImage()
-    var recette : RecetteMO = RecetteMO()
-
+    
+    var laRecette : RecetteMO?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //print("Recette sélétionnée : " + recette?.recette_nom!)
         
-        recetteImgView.image = imgView
-        nomRecette_titreLab.text = recette.recette_nom!
+        recetteImgView.image = UIImage(named:laRecette!.recette_nom!.lowercased().replacingOccurrences(of: " ", with: "_"))
+        nomRecette_titreLab.text = laRecette!.recette_nom!
+        paysOrigine_soustitreLab.text = laRecette!.son_pays_origine?.pays_nom!
+        descriptionRecette_lab.text = laRecette!.recette_descriptions!
+        //tabIngredients = laRecette!.ses_ingredients
         // Do any additional setup after loading the view.
     }
     
