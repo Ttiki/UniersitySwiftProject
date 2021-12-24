@@ -60,7 +60,6 @@ class RecettesTVC: UITableViewController {
     
     
     override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-        if(segue.identifier == "afficherInfosVC"){
         let destinationVC = segue.destination as! RecetteInfoViewController
         let selectedRow = tableView.indexPathForSelectedRow!.row
         destinationVC.laRecette = lesRecettes[selectedRow]
