@@ -18,33 +18,20 @@ class PlanViewController: UIViewController {
     var lesIngredients : [IngredientMO] = []
     var lesRecettes : [RecetteMO] = []
     
-    var latitudeToShow = 46.23
-    var longitudeToShow = 2.20
-    var spanZoomFloat = 20.0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lesPays = PaysMO.getTousLesPays()
         lesRecettes = RecetteMO.getToutesLesRecettes()
         
-        let posToShow = CLLocationCoordinate2D(latitude: latitudeToShow, longitude: longitudeToShow)
-        let spanSuperZoom = MKCoordinateSpan(latitudeDelta: spanZoomFloat, longitudeDelta: spanZoomFloat)
+     
        
         
         plan.mapType = .hybrid
         plan.addAnnotations(lesPays)
-        plan.region = MKCoordinateRegion(center: posToShow, span: spanSuperZoom)
         
     }
-    
-    func setLatitudeToShow(_ latitude: Double){
-        self.latitudeToShow = latitude
-    }
-    func setLongitudeToShow(_ longitude: Double){
-        self.longitudeToShow = longitude
-    }
-    
+
 
 }
 extension PlanViewController: MKMapViewDelegate{
