@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5692C05273BB8A7007B9B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C04273BB8A7007B9B5B /* AppDelegate.swift */; };
+		F5692C07273BB8A7007B9B5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C06273BB8A7007B9B5B /* SceneDelegate.swift */; };
+		F5692C09273BB8A8007B9B5B /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C08273BB8A8007B9B5B /* PlanViewController.swift */; };
+		F5692C0C273BB8A8007B9B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5692C0A273BB8A8007B9B5B /* Main.storyboard */; };
+		F5692C0E273BB8C7007B9B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5692C0D273BB8C7007B9B5B /* Assets.xcassets */; };
+		F5692C11273BB8C7007B9B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5692C0F273BB8C7007B9B5B /* LaunchScreen.storyboard */; };
+		F5692C1A273BB8F4007B9B5B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5692C19273BB8F4007B9B5B /* CoreLocation.framework */; };
+		F5692C1C273BB8FC007B9B5B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5692C1B273BB8FC007B9B5B /* MapKit.framework */; };
+		F5692C22273BC238007B9B5B /* Musee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C21273BC238007B9B5B /* Musee.swift */; };
+		F5692C24273BCA4A007B9B5B /* ListeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C23273BCA4A007B9B5B /* ListeTableViewController.swift */; };
+		F5692C26273BCA85007B9B5B /* MuseeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5692C25273BCA84007B9B5B /* MuseeTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5692C01273BB8A5007B9B5B /* MuseesParisiensGeoLoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseesParisiensGeoLoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5692C04273BB8A7007B9B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5692C06273BB8A7007B9B5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5692C08273BB8A8007B9B5B /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		F5692C0B273BB8A8007B9B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5692C0D273BB8C7007B9B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5692C10273BB8C7007B9B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5692C12273BB8C7007B9B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5692C19273BB8F4007B9B5B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F5692C1B273BB8FC007B9B5B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F5692C21273BC238007B9B5B /* Musee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musee.swift; sourceTree = "<group>"; };
+		F5692C23273BCA4A007B9B5B /* ListeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeTableViewController.swift; sourceTree = "<group>"; };
+		F5692C25273BCA84007B9B5B /* MuseeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseeTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5692BFE273BB8A5007B9B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5692C1C273BB8FC007B9B5B /* MapKit.framework in Frameworks */,
+				F5692C1A273BB8F4007B9B5B /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5692BF8273BB8A3007B9B5B = {
+			isa = PBXGroup;
+			children = (
+				F5692C03273BB8A5007B9B5B /* MuseesParisiensGeoLoc */,
+				F5692C02273BB8A5007B9B5B /* Products */,
+				F5692C18273BB8F3007B9B5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5692C02273BB8A5007B9B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5692C01273BB8A5007B9B5B /* MuseesParisiensGeoLoc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5692C03273BB8A5007B9B5B /* MuseesParisiensGeoLoc */ = {
+			isa = PBXGroup;
+			children = (
+				F5692C25273BCA84007B9B5B /* MuseeTableViewCell.swift */,
+				F5692C23273BCA4A007B9B5B /* ListeTableViewController.swift */,
+				F5692C21273BC238007B9B5B /* Musee.swift */,
+				F5692C04273BB8A7007B9B5B /* AppDelegate.swift */,
+				F5692C06273BB8A7007B9B5B /* SceneDelegate.swift */,
+				F5692C08273BB8A8007B9B5B /* PlanViewController.swift */,
+				F5692C0A273BB8A8007B9B5B /* Main.storyboard */,
+				F5692C0D273BB8C7007B9B5B /* Assets.xcassets */,
+				F5692C0F273BB8C7007B9B5B /* LaunchScreen.storyboard */,
+				F5692C12273BB8C7007B9B5B /* Info.plist */,
+			);
+			path = MuseesParisiensGeoLoc;
+			sourceTree = "<group>";
+		};
+		F5692C18273BB8F3007B9B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5692C1B273BB8FC007B9B5B /* MapKit.framework */,
+				F5692C19273BB8F4007B9B5B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5692C00273BB8A5007B9B5B /* MuseesParisiensGeoLoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5692C15273BB8C7007B9B5B /* Build configuration list for PBXNativeTarget "MuseesParisiensGeoLoc" */;
+			buildPhases = (
+				F5692BFD273BB8A5007B9B5B /* Sources */,
+				F5692BFE273BB8A5007B9B5B /* Frameworks */,
+				F5692BFF273BB8A5007B9B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuseesParisiensGeoLoc;
+			productName = MuseesParisiensGeoLoc;
+			productReference = F5692C01273BB8A5007B9B5B /* MuseesParisiensGeoLoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5692BF9273BB8A3007B9B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F5692C00273BB8A5007B9B5B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = F5692BFC273BB8A3007B9B5B /* Build configuration list for PBXProject "MuseesParisiensGeoLoc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5692BF8273BB8A3007B9B5B;
+			productRefGroup = F5692C02273BB8A5007B9B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5692C00273BB8A5007B9B5B /* MuseesParisiensGeoLoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5692BFF273BB8A5007B9B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5692C11273BB8C7007B9B5B /* LaunchScreen.storyboard in Resources */,
+				F5692C0E273BB8C7007B9B5B /* Assets.xcassets in Resources */,
+				F5692C0C273BB8A8007B9B5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5692BFD273BB8A5007B9B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5692C09273BB8A8007B9B5B /* PlanViewController.swift in Sources */,
+				F5692C22273BC238007B9B5B /* Musee.swift in Sources */,
+				F5692C05273BB8A7007B9B5B /* AppDelegate.swift in Sources */,
+				F5692C24273BCA4A007B9B5B /* ListeTableViewController.swift in Sources */,
+				F5692C07273BB8A7007B9B5B /* SceneDelegate.swift in Sources */,
+				F5692C26273BCA85007B9B5B /* MuseeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5692C0A273BB8A8007B9B5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5692C0B273BB8A8007B9B5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5692C0F273BB8C7007B9B5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5692C10273BB8C7007B9B5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5692C13273BB8C7007B9B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5692C14273BB8C7007B9B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5692C16273BB8C7007B9B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuseesParisiensGeoLoc/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L'application de géolocalisation des musées parisiens a besoin de votre autorisation pour fonctionner.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UPPA-L3.MuseesParisiensGeoLoc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5692C17273BB8C7007B9B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuseesParisiensGeoLoc/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L'application de géolocalisation des musées parisiens a besoin de votre autorisation pour fonctionner.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UPPA-L3.MuseesParisiensGeoLoc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5692BFC273BB8A3007B9B5B /* Build configuration list for PBXProject "MuseesParisiensGeoLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5692C13273BB8C7007B9B5B /* Debug */,
+				F5692C14273BB8C7007B9B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5692C15273BB8C7007B9B5B /* Build configuration list for PBXNativeTarget "MuseesParisiensGeoLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5692C16273BB8C7007B9B5B /* Debug */,
+				F5692C17273BB8C7007B9B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5692BF9273BB8A3007B9B5B /* Project object */;
+}
