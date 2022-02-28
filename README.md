@@ -1,6 +1,10 @@
-#University Swift Project
+# University Swift Project - Mobile IOT
 
-This repository contains a list of Swift projects made for my college course : "Programmation Mobile IOT" (Mobile development for IOT). This projects were made on XCode.
+<!--
+This project was made for the course "Développement des applications web" (_web application development_) for the third year CS bachelor degree at UPPA.
+This project uses the CakePHP framework.
+-->
+This repository contains a list of Swift projects made for my college course : "Programmation Mobile IOT" (basicaly ios development... there was nothing linked to IOT in this course. Just like all the other courses at this university, it just beautiful wording to make people want to come study CS, however it's really just powder in the eyes.). This course is available for the third year CS bachelor degree at UPPA.<br/>
 Each project was made to introduce a new concept / iOS function like table views, plan with MapKit, databases using DataCore, etc.
 
 You can find all the projects in the main branch or you can download each project independently by cloning the branch of the project. 
@@ -29,3 +33,9 @@ As said in the introduction of this README, I will archive this project at the e
 
 We had another and last final project to make to conclude this course. You can find it here: https://github.com/Ttiki/StudeHelp 
 We had to come up with an idea, draw each diagrams (class, use case, sequence, etc.) design the wireframe and mock-up views of our app, and then develop it.
+
+## Why this repo
+
+Why this repo? Well, just like all the other university projects repos on my GitHub or over on the [Stonks Life Inc. organization](https://github.com/Stonks-Life-Inc), I made this repo as a _souvenir_ of this beautiful university years I've spent to this _marvelous and prestigious_ university.
+
+![UPPA's logo](https://upload.wikimedia.org/wikipedia/fr/thumb/4/41/Logo_UPPA.svg/250px-Logo_UPPA.svg.png)
